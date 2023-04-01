@@ -19,7 +19,7 @@
 }
 
 .textmusic-footer{
-    width: 80%;
+    width: 60%;
     overflow-x: hidden;
     text-shadow: 1px 1px black;
 }
@@ -35,9 +35,9 @@
 .record-footer{
     animation: spinTheRecord 2s infinite linear;
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
     right: 100px;
-    height: 50px;
+    height: 35px;
     filter: invert(1);
 }
 
