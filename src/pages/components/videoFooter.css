@@ -1,3 +1,4 @@
+/* Estilos para dispositivos de tela grande */
 .footer{
     position: relative;
     text-align: start;
@@ -44,20 +45,69 @@
     margin-top: 10px;
 }
 
-@keyframes spinTheRecord {
-    0%{
-        transform: rotate(0deg);
+/* Estilos para dispositivos de tela pequena */
+@media only screen and (max-width: 480px) {
+    .footer{
+        position: relative;
+        text-align: start;
+        bottom: 30%;
+        color: white;
+        margin-left: 5px;
     }
-    100%{
-        transform: rotate(360deg);
+    
+    .text-footer h3{
+        text-shadow: 1px 1px black;
+        font-size: 20px;
+    }
+    
+    .text-footer p{
+        margin-bottom: 10px;
+        text-shadow: 1px 1px black;
+        font-size: 15px;
+    }
+    
+    .textmusic-footer{
+        width: 78%;
+        overflow-x: hidden;
+        text-shadow: 1px 1px black;
+    }
+    
+    .textmusic-footer p{
+        animation: moveTheText 3s infinite linear;
+    }
+    
+    .music-footer{
+        display: flex;
+    }
+    
+    .record-footer{
+        animation: spinTheRecord 2s infinite linear;
+        position: absolute;
+        bottom: 10px;
+        right: 2px;
+        height: 30px;
+        filter: invert(1);
+    }
+    
+    .iconmusic-footer{
+        margin-top: 10px;
     }
 }
 
+@keyframes spinTheRecord {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes moveTheText {
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
