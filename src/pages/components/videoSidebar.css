@@ -1,15 +1,40 @@
+/* Estilos para dispositivos de tela grande */
+
 .videoSidebar{
     position: absolute;
     top:50%;
-    right: 100px;
+    right: 70px;
     color: white;
+    text-shadow: 1px 1px black;
 }
 
 .sidebar-options{
-    padding: 3px;
+    padding: 2px;
     text-align: center;
 }
 
 .sidebar-options p{
-    font-size: 12px;
+    font-size: 15px;
+    text-shadow: 1px 1px black;
+}
+
+/* Estilos para dispositivos de tela pequena */
+@media only screen and (max-width: 440px) {
+    .videoSidebar{
+        position: absolute;
+        top:60%;
+        right: 25px;
+        color: white;
+        text-shadow: 1px 1px black;
+    }
+
+    .sidebar-options{
+        padding: 2px;
+        text-align: center;
+    }
+    
+    .sidebar-options p{
+        font-size: 15px;
+        text-shadow: 1px 1px black;
+    }
 }

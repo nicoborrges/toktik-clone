@@ -6,35 +6,3 @@ html{
 html::-webkit-scrollbar{
   display: none;
 }
-
-.App{
-  background-color: black;
-  height: 90vh;
-  display: grid;
-  place-items: center;
-}
-
-.app-videos{
-  height: 80vh;
-  max-height: 800px;
-  width: 80%;
-  max-width: 500px;
-  border: 1px solid black;
-  border-radius: 20px;
-  overflow: scroll;
-  scroll-snap-type: y mandatory;
-  position: relative;
-}
-
-/* funcionalide para chrome, opera e safari */
-
-.app-videos::-webkit-scrollbar{
-  display: none;
-}
-
-/* funcionalide para explorer, edge e firefox */
-
-.app-videos{
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
