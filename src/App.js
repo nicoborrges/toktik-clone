@@ -3,6 +3,7 @@ import "./App.css";
 import VideoComponent from "./pages/VideoComponent";
 import db from "./config/firebase";
 import { collection, getDocs } from "firebase/firestore/lite";
+import GitHubButton from "./pages/components/GitHubButton";
 
 function App() {
   const [video, setVideos] = useState([]);
@@ -35,6 +36,7 @@ function App() {
           );
         })}
       </div>
+      <GitHubButton/>
     </div>
   );
 }
